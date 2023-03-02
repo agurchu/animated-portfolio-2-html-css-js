@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-primary: #349cc3;
+  --color-bg: #002431;
+  --color-secondary: #4ca0ac;
+  --color-text: #fff;
+}
