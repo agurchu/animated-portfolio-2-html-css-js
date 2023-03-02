@@ -26,7 +26,7 @@ html {
 }
 
 :root {
-  --color-primary: #349cc3;
+  --color-primary: #4accff;
   --color-bg: #001820;
   --color-secondary: #4ca0ac;
   --color-text: #fff;
@@ -34,6 +34,7 @@ html {
 
 body {
   background: var(--color-bg);
+  color: var(--color-text);
 }
 
 .header {
@@ -52,6 +53,8 @@ body {
 .logo {
   cursor: default;
   width: 220px;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
 }
 
 .logo img {
@@ -69,9 +72,113 @@ body {
   margin-left: 35px;
   font-weight: 500;
   transition: 0.3s ease;
+  animation: slideTop 5s ease forwards;
 }
 
 .nav-bar a:hover,
 .nav-bar a.active {
   color: var(--color-primary);
 }
+
+/*______________home section starts_____________*/
+
+.home {
+  display: flex;
+  width: 100%;
+  padding: 70px 10% 0;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-img img {
+  max-width: 550px;
+  margin-right: -20px;
+}
+
+.home-content h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+
+.home-content p {
+  font-size: 1.6rem;
+}
+
+.home-content h3 span {
+  color: var(--color-primary);
+}
+
+.home-content h1 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  margin: -3px 0;
+}
+
+.social-media a {
+  align-items: center;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  display: inline-flex;
+  font-size: 2rem;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+  transition: 0.5s;
+  margin: 30px 15px 30px 0;
+}
+
+.social-media a:hover {
+  color: var(--color-bg);
+  background: var(--color-primary);
+  box-shadow: 0 0 20px var(--color-primary);
+}
+
+.btn {
+  font-size: 1.6rem;
+  color: var(--color-bg);
+  background: var(--color-primary);
+  padding: 12px 28px;
+  display: inline-flex;
+  border-radius: 40px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  box-shadow: 0 0 10px var(--color-primary);
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*______________home section ends_____________*/
