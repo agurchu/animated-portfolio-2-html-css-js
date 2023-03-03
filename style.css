@@ -49,7 +49,7 @@ body {
   background: var(--color-bg);
   left: 0;
   width: 100%;
-  padding: 2rem 9%;
+  padding: 1rem 9%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,7 +64,7 @@ body {
 
 .logo {
   cursor: default;
-  width: 220px;
+  width: 22rem;
   opacity: 0;
   animation: slideRight 1s ease forwards;
 }
@@ -274,42 +274,6 @@ body {
   }
 }
 
-@media (max-width: 1160px) {
-  .header {
-    padding: 20px 5%;
-  }
-
-  section {
-    padding: 12rem 5% 4rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  .header {
-    padding: 20px 20px;
-  }
-
-  section {
-    padding: 12rem 20px 4rem;
-  }
-  .multiple-text {
-    display: flex;
-  }
-
-  .home-content h3:nth-of-type(2) {
-    margin-bottom: 0;
-  }
-
-  .home-img img {
-    width: 400px;
-  }
-}
-
-@media (max-width: 768px) {
-  .home {
-    flex-direction: column;
-  }
-}
 /*______________home section ends_____________*/
 
 /*______________about section starts_____________*/
@@ -519,12 +483,12 @@ body {
 /*______________footer section starts_____________*/
 
 .footer {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 2rem 9%;
   background: var(--color-2nd-bg);
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 9%;
 }
 
 .footer-text {
@@ -532,12 +496,12 @@ body {
 }
 
 .footer-iconTop a {
-  display: inline-flex;
-  justify-content: center;
   align-items: center;
   background: var(--color-primary);
-  padding: 0.8rem;
   border-radius: 0.8rem;
+  display: inline-flex;
+  justify-content: center;
+  padding: 0.8rem;
   transition: 0.5s ease;
 }
 
@@ -551,3 +515,56 @@ body {
 }
 
 /*______________footer section ends_____________*/
+
+/*______________Breaking points_____________*/
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .logo {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding: 10rem 3% 2rem;
+  }
+
+  .header {
+    padding: 1rem 3%;
+  }
+
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .nav-bar {
+    background: var(--color-bg);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    left: 0;
+    padding: 1rem 3%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+  }
+
+  .nav-bar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+}
