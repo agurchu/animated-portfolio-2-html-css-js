@@ -509,3 +509,39 @@ body {
 }
 
 /*______________contact section ends_____________*/
+
+/*______________footer section starts_____________*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 9%;
+  background: var(--color-2nd-bg);
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-primary);
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+
+.footer-iconTop a:hover {
+  box-shadow: var(--box-shodow-btn);
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--color-2nd-bg);
+}
+
+/*______________footer section ends_____________*/
