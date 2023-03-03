@@ -358,6 +358,7 @@ body {
   height: 5rem;
   justify-content: center;
   width: 5rem;
+  transition: 0.6s ease;
 }
 
 .portfolio-layer a i {
@@ -365,6 +366,11 @@ body {
   color: var(--color-2nd-bg);
 }
 
+.portfolio-layer a:hover {
+  background: transparent;
+  border: 0.2rem solid var(--color-2nd-bg);
+  box-shadow: var(--box-shodow-btn);
+}
 /*______________porfolio section ends_____________*/
 
 /*______________contact section starts_____________*/
@@ -581,6 +587,10 @@ body {
 @media (max-width: 365px) {
   .home-img img {
     width: 90vw;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
 
   .about-img img {
