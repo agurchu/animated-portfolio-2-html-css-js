@@ -297,7 +297,7 @@ body {
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
   align-items: center;
   gap: 2rem;
 }
@@ -442,7 +442,7 @@ body {
 
 /*______________footer section ends_____________*/
 
-/*______________Breaking points_____________*/
+/*______________Breaking points starts_____________*/
 
 @media (max-width: 1200px) {
   html {
@@ -451,6 +451,10 @@ body {
 
   .logo {
     width: 20rem;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
 }
 
@@ -473,7 +477,8 @@ body {
 }
 
 @media (max-width: 896px) {
-  .services {
+  .services,
+  .portfolio {
     padding-bottom: 7rem;
   }
 }
@@ -546,10 +551,14 @@ body {
     margin-top: 4rem;
   }
 
-  .services h2 {
+  .services h2,
+  .portfolio h2 {
     margin-bottom: 3rem;
   }
 }
+/*______________________________Breaking points end_____________*/
+
+/*_______________________________Key frames______________________*/
 
 @keyframes slideRight {
   0% {
