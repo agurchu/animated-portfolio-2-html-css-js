@@ -1,3 +1,12 @@
+///_________________________ toggle icon navbar_________________
+let menuIcon = document.querySelector("#menu-icon");
+let navBar = document.querySelector(".nav-bar");
+
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle("bx-x");
+  navBar.classList.toggle("active");
+};
+
 ///_________________________ scroll section active link_________________
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");

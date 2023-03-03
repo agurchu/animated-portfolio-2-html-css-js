@@ -560,6 +560,11 @@ body {
     position: absolute;
     top: 100%;
     width: 100%;
+    display: none;
+  }
+
+  .nav-bar.acitve {
+    display: block;
   }
 
   .nav-bar a {
