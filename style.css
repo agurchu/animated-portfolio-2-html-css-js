@@ -5,6 +5,10 @@
   padding: 0;
   font-family: "poppins", sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  outline: none;
+  border: none;
 }
 
 *::after,
@@ -12,23 +16,15 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: 0;
-}
-
-button {
-  outline: none;
-  border: none;
-}
-
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 :root {
   --color-primary: #4accff;
   --color-bg: #001820;
-  --color-secondary: #4ca0ac;
+  --color-2nd-bg: #323d41;
   --color-text: #fff;
   --box-shodow-btn: 0 0 10px var(--color-primary);
 }
@@ -44,7 +40,7 @@ body {
   background: transparent;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
+  padding: 2rem 9%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,6 +77,12 @@ body {
 .nav-bar a:hover,
 .nav-bar a.active {
   color: var(--color-primary);
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--color-text);
+  display: none;
 }
 
 /*______________home section starts_____________*/
@@ -149,9 +151,9 @@ body {
   color: var(--color-primary);
   display: inline-flex;
   font-size: 2rem;
-  height: 40px;
+  height: 4rem;
   justify-content: center;
-  width: 40px;
+  width: 4rem;
   transition: 0.5s;
   margin: 30px 15px 30px 0;
   opacity: 0;
