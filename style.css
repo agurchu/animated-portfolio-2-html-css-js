@@ -26,7 +26,7 @@ span {
 }
 
 section {
-  padding: 14rem 9% 4rem;
+  padding: 12rem 9% 4rem;
   min-height: 100vh;
 }
 
@@ -274,7 +274,7 @@ body {
   }
 
   section {
-    padding: 14rem 5% 4rem;
+    padding: 12rem 5% 4rem;
   }
 }
 
@@ -284,7 +284,7 @@ body {
   }
 
   section {
-    padding: 14rem 20px 4rem;
+    padding: 12rem 20px 4rem;
   }
   .multiple-text {
     display: flex;
@@ -415,6 +415,8 @@ body {
 
 .portfolio-box picture img {
   width: 100%;
+  transform: scale(1.03) translateY(0.3rem);
+  object-fit: cover;
   transition: 0.5s ease;
 }
 
@@ -468,3 +470,42 @@ body {
 }
 
 /*______________porfolio section ends_____________*/
+
+/*______________contact section starts_____________*/
+
+.contact h2 {
+  margin-bottom: 3rem;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto 3rem;
+  text-align: center;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  background: var(--color-2nd-bg);
+  color: var(--color-text);
+  border-radius: 0.8rem;
+  margin: 0.7rem 0;
+  font-size: 1.6rem;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+/*______________contact section ends_____________*/
