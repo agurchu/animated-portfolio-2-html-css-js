@@ -30,6 +30,7 @@ html {
   --color-bg: #001820;
   --color-secondary: #4ca0ac;
   --color-text: #fff;
+  --box-shodow-btn: 0 0 10px var(--color-primary);
 }
 
 body {
@@ -173,7 +174,7 @@ body {
   border-radius: 40px;
   letter-spacing: 1px;
   font-weight: 600;
-  box-shadow: 0 0 10px var(--color-primary);
+  box-shadow: var(--box-shodow-btn);
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
