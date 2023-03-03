@@ -38,10 +38,28 @@ window.onscroll = () => {
   navBar.classList.remove("active");
 };
 
-let typed = new Typed(".multiple-text", {
+const typed = new Typed(".multiple-text", {
   strings: ["Frontend Developer", "Graphic Designer", "Music Producer"],
   typedSpeed: 100,
   backSpeed: 50,
   backDelay: 1000,
   loop: true,
 });
+
+///_________________________ scroll reveal_________________
+ScrollReveal({
+  reset: true,
+  distance: "80px",
+  duration: 2000,
+  delay: 200,
+});
+
+ScrollReveal().reveal(".home-content, .heading", { origin: "top" });
+ScrollReveal().reveal(".about-img", { origin: "left" });
+ScrollReveal().reveal(".about-content", { origin: "right" });
+ScrollReveal().reveal(
+  ".home-img, .services-container, .portfolio-box, .contact form",
+  {
+    origin: "bottom",
+  }
+);
