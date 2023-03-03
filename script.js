@@ -32,6 +32,10 @@ window.onscroll = () => {
   let header = document.querySelector("header");
 
   header.classList.toggle("sticky", window.scrollY > 100);
+
+  ///_________________________ remove toggle icon  and navbar when click navbar_________________
+  menuIcon.classList.remove("bx-x");
+  navBar.classList.remove("active");
 };
 
 let typed = new Typed(".multiple-text", {
