@@ -85,7 +85,7 @@ body {
   font-weight: 500;
   transition: 0.3s ease;
   opacity: 0;
-  animation: slideTop 5s ease forwards;
+  animation: slideTop 2s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
 
@@ -97,6 +97,7 @@ body {
 #menu-icon {
   font-size: 3.6rem;
   color: var(--color-text);
+  cursor: pointer;
   display: none;
 }
 
@@ -200,78 +201,6 @@ body {
 
 .btn:hover {
   box-shadow: none;
-}
-
-@keyframes slideRight {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideLeft {
-  0% {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideTop {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideBottom {
-  0% {
-    transform: translateY(-100px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes floatImage {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-24px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 /*______________home section ends_____________*/
@@ -549,6 +478,11 @@ body {
 
   #menu-icon {
     display: block;
+    transition: 0.5s ease;
+  }
+
+  #menu-icon:hover {
+    color: var(--color-primary);
   }
 
   .nav-bar {
@@ -563,13 +497,95 @@ body {
     display: none;
   }
 
-  .nav-bar.acitve {
+  .nav-bar.active {
     display: block;
   }
 
   .nav-bar a {
     display: block;
     font-size: 2rem;
-    margin: 3rem 0;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+    transition: 0.2s linear;
+  }
+
+  .nav-bar a:hover {
+    background: var(--color-2nd-bg);
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-24px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
