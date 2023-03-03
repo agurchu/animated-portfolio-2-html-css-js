@@ -38,11 +38,11 @@
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="nav-bar">
-        <a href="#" style="--i: 1" class="active">Home</a>
-        <a href="#" style="--i: 2">About</a>
-        <a href="#" style="--i: 3">Skills</a>
-        <a href="#" style="--i: 4">Portfolio</a>
-        <a href="#" style="--i: 5">Contact</a>
+        <a href="#home" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#service" style="--i: 3">Services</a>
+        <a href="#portfolio" style="--i: 4">Portfolio</a>
+        <a href="#contact" style="--i: 5">Contact</a>
       </nav>
     </header>
 
@@ -50,7 +50,7 @@
 
     <!--______________________home section starts________________-->
 
-    <section class="home">
+    <section id="home" class="home">
       <div class="home-content">
         <h3>Hello, Its's Me</h3>
         <h1>Katlego J. Mtimane</h1>
@@ -84,6 +84,42 @@
     </section>
 
     <!--______________________home section ends________________-->
+
+    <!--______________________about section starts________________-->
+
+    <section class="about" id="about">
+      <picture class="about-img">
+        <source
+          type="image/webp"
+          srcset="
+            images/kj-polygon-unfilled.webp    1x,
+            images/kj-polygon-unfilled@2x.webp 2x
+          "
+        />
+        <source
+          type="image/png"
+          srcset="
+            images/kj-polygon-unfilled@2x.png 2x,
+            images/kj-polygon-unfilled.png    1x
+          "
+        />
+        <img src="images/kj-polygon-unfilled.png" alt="katlego image" />
+      </picture>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Front-end Developer</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odio
+          officia omnis autem? Consequuntur ab recusandae optio, quaerat itaque
+          soluta odio quia officia ullam. Natus, dignissimos labore. Excepturi,
+          labore aspernatur!
+        </p>
+        <a class="btn" href="#">Read More</a>
+      </div>
+    </section>
+
+    <!--______________________about section ends________________-->
 
     <!--typed.js CDN-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>

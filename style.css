@@ -24,7 +24,7 @@ html {
 :root {
   --color-primary: #4accff;
   --color-bg: #001820;
-  --color-2nd-bg: #323d41;
+  --color-2nd-bg: #1d272b;
   --color-text: #fff;
   --box-shodow-btn: 0 0 1rem var(--color-primary);
 }
@@ -37,7 +37,7 @@ body {
 .header {
   position: fixed;
   top: 0;
-  background: transparent;
+  background: var(--color-bg);
   left: 0;
   width: 100%;
   padding: 2rem 9%;
@@ -181,6 +181,11 @@ body {
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  box-shadow: none;
 }
 
 @keyframes slideRight {
@@ -292,3 +297,38 @@ body {
   }
 }
 /*______________home section ends_____________*/
+
+/*______________about section starts_____________*/
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--color-2nd-bg);
+  height: 100vh;
+}
+
+.about-img {
+  width: 35vw;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0.3rem;
+}
+/*______________about section ends_____________*/
