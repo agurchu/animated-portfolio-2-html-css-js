@@ -21,6 +21,15 @@ html {
   overflow-x: hidden;
 }
 
+span {
+  color: var(--color-primary);
+}
+
+section {
+  padding: 14rem 9% 4rem;
+  min-height: 100vh;
+}
+
 :root {
   --color-primary: #4accff;
   --color-bg: #001820;
@@ -90,11 +99,10 @@ body {
 .home {
   display: flex;
   width: 100%;
-  padding: 70px 10% 0;
+
   position: relative;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
 }
 
 .home-content {
@@ -265,8 +273,8 @@ body {
     padding: 20px 5%;
   }
 
-  .home {
-    padding: 70px 5% 0;
+  section {
+    padding: 14rem 5% 4rem;
   }
 }
 
@@ -275,8 +283,8 @@ body {
     padding: 20px 20px;
   }
 
-  .home {
-    padding: 100px 20px 0;
+  section {
+    padding: 14rem 20px 4rem;
   }
   .multiple-text {
     display: flex;
@@ -301,12 +309,15 @@ body {
 /*______________about section starts_____________*/
 
 .about {
+  background: var(--color-2nd-bg);
+  height: 100vh;
+}
+
+.about-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background: var(--color-2nd-bg);
-  height: 100vh;
 }
 
 .about-img {
@@ -332,3 +343,128 @@ body {
   margin: 2rem 0.3rem;
 }
 /*______________about section ends_____________*/
+
+/*______________services section starts_____________*/
+
+.services h2 {
+  margin-bottom: 5rem;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services-container .services-box {
+  background: var(--color-2nd-bg);
+  flex: 1 1 30rem;
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 2px solid var(--color-bg);
+  transition: 0.4s ease;
+}
+
+.services-container .services-box:hover {
+  border-color: var(--color-primary);
+  transform: scale(1.02);
+}
+
+.services-box i {
+  font-size: 7rem;
+  color: var(--color-primary);
+}
+
+.services-box h3 {
+  font-size: 2.6rem;
+}
+
+.services-box p {
+  font-size: 1.6rem;
+  margin: 1rem 0 3rem;
+}
+
+/*______________services section ends_____________*/
+
+/*______________porfolio section starts_____________*/
+
+.portfolio {
+  background: var(--color-2nd-bg);
+}
+
+.portfolio h2 {
+  margin-bottom: 4rem;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  align-items: center;
+  gap: 2rem;
+}
+
+.portfolio-container .portfolio-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--color-bg);
+  overflow: hidden;
+}
+
+.portfolio-box picture img {
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.portfolio-box:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-box .portfolio-layer {
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--color-primary));
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 0 4rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s ease;
+  transform: translateY(100%);
+}
+
+.portfolio-box:hover .portfolio-layer {
+  transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+  font-size: 3rem;
+}
+
+.portfolio-layer p {
+  font-size: 1.6rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.portfolio-layer a {
+  align-items: center;
+  background: var(--color-text);
+  border-radius: 50%;
+  display: inline-flex;
+  height: 5rem;
+  justify-content: center;
+  width: 5rem;
+}
+
+.portfolio-layer a i {
+  font-size: 2rem;
+  color: var(--color-2nd-bg);
+}
+
+/*______________porfolio section ends_____________*/

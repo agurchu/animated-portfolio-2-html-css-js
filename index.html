@@ -40,7 +40,7 @@
       <nav class="nav-bar">
         <a href="#home" style="--i: 1" class="active">Home</a>
         <a href="#about" style="--i: 2">About</a>
-        <a href="#service" style="--i: 3">Services</a>
+        <a href="#services" style="--i: 3">Services</a>
         <a href="#portfolio" style="--i: 4">Portfolio</a>
         <a href="#contact" style="--i: 5">Contact</a>
       </nav>
@@ -88,38 +88,269 @@
     <!--______________________about section starts________________-->
 
     <section class="about" id="about">
-      <picture class="about-img">
-        <source
-          type="image/webp"
-          srcset="
-            images/kj-polygon-unfilled.webp    1x,
-            images/kj-polygon-unfilled@2x.webp 2x
-          "
-        />
-        <source
-          type="image/png"
-          srcset="
-            images/kj-polygon-unfilled@2x.png 2x,
-            images/kj-polygon-unfilled.png    1x
-          "
-        />
-        <img src="images/kj-polygon-unfilled.png" alt="katlego image" />
-      </picture>
-
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Front-end Developer</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odio
-          officia omnis autem? Consequuntur ab recusandae optio, quaerat itaque
-          soluta odio quia officia ullam. Natus, dignissimos labore. Excepturi,
-          labore aspernatur!
-        </p>
-        <a class="btn" href="#">Read More</a>
+      <h2 class="heading">About</h2>
+      <div class="about-container">
+        <picture class="about-img">
+          <source
+            type="image/webp"
+            srcset="
+              images/kj-polygon-unfilled.webp    1x,
+              images/kj-polygon-unfilled@2x.webp 2x
+            "
+          />
+          <source
+            type="image/png"
+            srcset="
+              images/kj-polygon-unfilled@2x.png 2x,
+              images/kj-polygon-unfilled.png    1x
+            "
+          />
+          <img src="images/kj-polygon-unfilled.png" alt="katlego image" />
+        </picture>
+        <div class="about-content">
+          <h2 class="heading">About <span>Me</span></h2>
+          <h3>Front-end Developer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam odio
+            officia omnis autem? Consequuntur ab recusandae optio, quaerat
+            itaque soluta odio quia officia ullam. Natus, dignissimos labore.
+            Excepturi, labore aspernatur!
+          </p>
+          <a class="btn" href="#">Read More</a>
+        </div>
       </div>
     </section>
 
     <!--______________________about section ends________________-->
+
+    <!--______________________services section starts________________-->
+
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-curly"></i>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+            corporis possimus blanditiis consequatur, tenetur officiis quo
+            incidunt nemo quasi non consectetur veniam voluptate culpa
+            doloremque corrupti labore. Dolorum, est iure.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxs-paint"></i>
+          <h3>Graphic Design</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+            corporis possimus blanditiis consequatur, tenetur officiis quo
+            incidunt nemo quasi non consectetur veniam voluptate culpa
+            doloremque corrupti labore. Dolorum, est iure.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+          <i class="bx bx-music"></i>
+          <h3>Music Production</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+            corporis possimus blanditiis consequatur, tenetur officiis quo
+            incidunt nemo quasi non consectetur veniam voluptate culpa
+            doloremque corrupti labore. Dolorum, est iure.
+          </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!--______________________services section ends________________-->
+
+    <!--______________________portfolio section starts________________-->
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                project-images/webDev-project1@2x.webp 2x,
+                project-images/webDev-project1.webp    1x
+              "
+            />
+
+            <source
+              type="image/jpg"
+              srcset="
+                project-images/webDev-project1@2x.jpg 2x,
+                project-images/webDev-project1.jpg    1x
+              "
+            />
+            <img src="project-images/webDev-project1.jpg" alt="" />
+          </picture>
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate, voluptatem!
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                project-images/webDev-project2@2x.webp 2x,
+                project-images/webDev-project2.webp    1x
+              "
+            />
+
+            <source
+              type="image/jpg"
+              srcset="
+                project-images/webDev-project2@2x.jpg 2x,
+                project-images/webDev-project2.jpg    1x
+              "
+            />
+            <img src="project-images/webDev-project2.jpg" alt="" />
+          </picture>
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate, voluptatem!
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                project-images/webDev-project3@2x.webp 2x,
+                project-images/webDev-project3.webp    1x
+              "
+            />
+
+            <source
+              type="image/png"
+              srcset="
+                project-images/webDev-project3@2x.png 2x,
+                project-images/webDev-project3.png    1x
+              "
+            />
+            <img src="project-images/webDev-project3.png" alt="" />
+          </picture>
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate, voluptatem!
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                project-images/webDev-project4@2x.webp 2x,
+                project-images/webDev-project4.webp    1x
+              "
+            />
+
+            <source
+              type="image/jpg"
+              srcset="
+                project-images/webDev-project4@2x.jpg 2x,
+                project-images/webDev-project4.jpg    1x
+              "
+            />
+            <img src="project-images/webDev-project4.jpg" alt="" />
+          </picture>
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate, voluptatem!
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                project-images/webDev-project5@2x.webp 2x,
+                project-images/webDev-project5.webp    1x
+              "
+            />
+
+            <source
+              type="image/jpg"
+              srcset="
+                project-images/webDev-project5@2x.jpg 2x,
+                project-images/webDev-project5.jpg    1x
+              "
+            />
+            <img src="project-images/webDev-project5.jpg" alt="" />
+          </picture>
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate, voluptatem!
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                project-images/webDev-project6@2x.webp 2x,
+                project-images/webDev-project6.webp    1x
+              "
+            />
+
+            <source
+              type="image/jpg"
+              srcset="
+                project-images/webDev-project6@2x.jpg 2x,
+                project-images/webDev-project6.jpg    1x
+              "
+            />
+            <img src="project-images/webDev-project6.jpg" alt="" />
+          </picture>
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate, voluptatem!
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--______________________portfolio section ends________________-->
 
     <!--typed.js CDN-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
